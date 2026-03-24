@@ -1,0 +1,75 @@
+@import "styles/globals/variables";
+
+
+.block{
+    display: flex;
+    align-content: center;
+}
+
+.control{
+    background: transparent;
+    line-height: 1;
+    margin: 0 .5rem;
+    display: block;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    fill: #777;
+}
+
+.closeBtn{
+    padding: .25rem !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1;
+}
+
+.text{
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: .9;
+    font-weight: normal;
+    text-transform: none !important;
+    color: initial !important;
+    text-wrap: wrap;
+}
+
+.popover{
+    z-index: 9;    
+    padding: 1rem;
+    background: #fff;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-lg;
+    width: 300px;
+    position: relative;
+    display: block;
+
+    @media only screen and (max-width: $screen-sm ) {
+        width: auto;
+        max-width: 300px;
+    }
+
+    &[data-popper-placement^='top'] > .arrow {
+        bottom: -4px;
+    }
+    
+    &[data-popper-placement^='bottom']{
+        box-shadow: 0 -.5rem 1rem rgba(#000, .15);
+
+        & > .arrow {
+            top: -4px;
+        }
+    }
+
+    &[data-popper-placement^='left'] > .arrow {
+        right: -4px;
+    }
+    
+    &[data-popper-placement^='right'] > .arrow {
+        left: -4px;
+    }
+}
+

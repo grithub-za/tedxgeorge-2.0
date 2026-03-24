@@ -1,0 +1,84 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    display: flex;
+    margin-right: 2rem;
+    width: auto;
+    position: relative;
+    max-height: 60px;
+
+    &:hover{
+        cursor: pointer;
+
+        & .control{
+            background-color: #999;
+        }
+        
+        & .menu{
+            display: block;
+        }
+    }
+}
+
+.control{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #999;
+    border-radius: $button-border-radius;
+    box-shadow: $box-shadow;
+    color: initial;
+    font-weight: 600;
+}
+
+.qty{
+    padding: 0 .5rem;
+    margin-left: .25rem;
+}
+
+.sm{
+    margin: 0;
+    height: 30px;
+
+    & + .menu{
+        top: 30px !important;
+        left: -8px;
+    }
+}
+
+.menu{
+    border-radius: $button-border-radius;
+    display: none;
+    position: absolute;
+    width: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 250px;
+    background-color: $white;
+    top: 55px;
+    left: 0;
+    margin-left: 8px;
+    list-style: none;
+    box-shadow: $box-shadow-lg;
+    z-index: 20;
+}
+
+.menuItem{
+    border-bottom: 1px solid $dove;
+    width: 100%;
+}
+
+.menuBtn{
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    background-color: $white;
+
+    &:hover{
+        background-color: $mist;
+    }
+}
+

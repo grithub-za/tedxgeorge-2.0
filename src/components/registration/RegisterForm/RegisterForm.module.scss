@@ -1,0 +1,126 @@
+@import "@/styles/globals/placeholders";
+
+
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    & fieldset{
+        margin-bottom: 4rem;
+    }
+
+    @media screen and (max-width: $screen-sm){
+        width: 100%;
+        padding: 0;
+        // order: 1;
+    }
+}
+
+.col_1_2{
+    width: 50% !important;
+    flex: 1 0 50% !important;
+}
+
+.col_2_3{
+    width: 60% !important;
+    flex: 1 0 60% !important;
+}
+
+.legend{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.control{
+   @extend %standard-control
+}
+
+.controlShort{
+    width: 50%;
+}
+
+.controlGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1 0 0%;
+
+    & label{
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+        color: #ccc;
+        line-height: 1.4;
+    }
+}
+
+.controlRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.checkboxControl{
+    flex-direction: row;
+    align-content: center;
+
+    & label{
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+        line-height: 1.2;
+
+        & small{
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    }
+}
+
+.reviewIndemnity{
+    background-color: rgb(175 126 134 / 14%);
+    color: #fff;
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+    border-bottom: 2px dotted #999;
+    line-height: 1.6;
+}
+
+.divider{
+    margin: 2rem 0 !important;
+    display: flex;
+}
+
+.btn{
+    display: flex;
+    flex: 1 0 auto;
+    padding: 1.5rem 2rem;
+    font-size: 2.1rem;    
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    width: 100%;
+    margin-top: 2rem;
+    height: 65px;
+
+    & svg{
+        fill: #fff;
+        width: 30px;
+        height: 30px;
+        margin-right: 0.5rem;
+    }
+}
+
+.highlight{
+    background-color: #333;
+    padding: 2rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+
+

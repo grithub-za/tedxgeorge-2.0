@@ -1,0 +1,27 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #444;
+    border-radius: $border-radius;
+    margin: 2rem 0 0 2rem;
+    box-shadow: $box-shadow;
+    justify-content: space-between;
+    position: relative;
+
+    @media screen and (max-width: $screen-sm){
+        padding: 1rem;
+    }
+}
+
+.noMargin{
+    margin: 0
+}
+
+.clear{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}

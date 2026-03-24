@@ -1,0 +1,23 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    background-color: $white;
+    margin-bottom: 1rem;
+    color: #111;
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.control{
+    @extend %standard-control
+}

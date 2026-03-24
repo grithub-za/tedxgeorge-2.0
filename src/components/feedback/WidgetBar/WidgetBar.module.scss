@@ -1,0 +1,79 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    position: fixed;
+    top: 0;
+    right: -31svw;
+    bottom: 0;
+    width: 30svw;
+    background-color: #2a2a2a;
+    z-index: 100;
+    box-shadow: $box-shadow;
+    border-left: 1px solid #111;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(1,-0.03,.23,1);
+
+    @media screen and (max-width: $screen-md){
+        width: 55svw;
+        right:  -55svw !important;
+    }
+
+    @media screen and (max-width: $screen-sm){
+        width: 95svw;
+        right:  -95svw !important;
+    }
+}
+
+.body{
+    background-color: #333;
+    height: 100%;
+}
+
+
+
+.show{
+    right: 0 !important;
+    opacity: 1;
+    transition-duration: 0.6s;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding: 2rem;
+    position: relative;
+}
+
+.heading{
+    font-size: 2.1rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.closeBtn{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 1rem;
+    background-color: transparent;
+
+    & svg{
+        fill: #999 !important;
+    }
+}
+
+
+.secondary{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 1rem;
+}
+
+
+

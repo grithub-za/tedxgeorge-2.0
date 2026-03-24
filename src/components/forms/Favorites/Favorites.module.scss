@@ -1,0 +1,14 @@
+@import 'styles/globals/variables';
+
+
+.block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon{
+    fill: $white !important;
+    margin: 0 !important;
+}
+

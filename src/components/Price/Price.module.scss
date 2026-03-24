@@ -1,0 +1,53 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    display: flex;
+    flex-direction: column;
+}
+
+.price{
+    @extend %h3;
+    font-weight: 700;
+    letter-spacing: -0.15rem;
+    line-height: 1;
+    margin: 0;
+    color: #fff !important;
+}
+
+.sm{
+    @extend %h6;
+    letter-spacing: 0rem;
+    line-height: 1 !important;
+}
+
+.md{
+    @extend %h5;
+    letter-spacing: 0rem;
+    line-height: 1 !important;
+}
+
+.listPrice{
+    font-size: 1.2rem;
+    color: #aaa;
+    line-height: 1;
+    margin: .5rem 0 0 0;
+    text-align: center;
+}
+
+.priceRow{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.badge{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    background-color: $red;
+    line-height: 1;
+    font-weight: 700;
+}
+

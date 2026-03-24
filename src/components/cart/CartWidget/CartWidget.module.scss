@@ -1,0 +1,75 @@
+@import "@/styles/globals/placeholders";
+
+.block{
+    @extend %widgetBlock;
+    justify-content: space-between;
+}
+
+.content{
+    margin: 0 !important;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.actions{
+    @extend %widgetActions;
+}
+
+
+.buttonRow{
+    @extend %widgetButtonRow;
+    flex-direction: column;
+    width: 100%;
+
+    & [class^="Button_block"]{
+        // flex: 0;
+        white-space: nowrap;
+        padding: 2rem 2.25rem;
+    }
+}
+
+.subtotal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.totalItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0 0 0;
+    border-top: 1px solid $dove;
+
+    &:first-of-type{
+        padding: 0;
+        border-top: none;
+    }
+}
+
+.empty{
+    padding: 2rem;
+    text-align: center;
+}
+
+.addTicket{
+    color: #ccc !important;
+    margin: 1rem 0 0 0;
+    border-color: #ccc !important;
+
+    & svg{
+        fill: #ccc !important;
+    }
+}
+

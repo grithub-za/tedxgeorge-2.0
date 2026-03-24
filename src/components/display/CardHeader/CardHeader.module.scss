@@ -1,0 +1,50 @@
+@import "styles/globals/placeholders";
+
+.block{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.title{
+    @extend %h6;
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    align-content: center;
+    align-items: center;
+}
+
+.subTitle{
+    margin-top: .5rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.titleBlock{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.noFlex{
+    flex: 1 0 0%;
+}
+
+.toolbar{
+    flex: 0 auto;
+    font-size: 2.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.titleLink{
+    margin-left: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem !important;
+}
+

@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { ValueBanner } from "components/ads";
+
+<Meta title="Ads/ValueBanner" component={ValueBanner} />
+
+# Value Banner
+
+The API documentation of the  ValueBanner component. Learn more about the props and customization. 
+<br />
+
+### Import
+```javascript
+import { ValueBanner } from "components/ads";
+```
+
+<br />
+
+## Example
+
+
+export const Template = () => (
+    <ValueBanner></ValueBanner>
+);
+
+<Canvas withSource="open">
+	<Story
+		name="ValueBanner"		
+	>
+		{Template.bind({})}
+	</Story>    
+</Canvas>

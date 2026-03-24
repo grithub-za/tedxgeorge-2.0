@@ -1,0 +1,116 @@
+@import "styles/globals/variables";
+@import 'styles/globals/placeholders';
+
+
+.block{
+    position: absolute;
+    display: flex;
+    margin-top: 80px;
+    flex: 1 0 auto;
+    flex-direction: column;
+    border: 1px solid black;
+
+    &::after{
+        @extend %dark-arrow;
+        transform: rotate(90deg);
+        right: 1.5rem;
+    }
+
+    &__ocean{
+        &::after{
+            border-left-color: $ocean;
+        }
+    }
+
+    @media only screen and (max-width: $screen-sm ){
+        margin-left: 10%;
+        width: 300px;
+    }
+    @media only screen and (min-width: $screen-sm ) and (max-width: $screen-xl ) {
+        margin-left: 3%;
+        width: 300px;
+    }
+    @media only screen and (min-width: $screen-xl ) and (max-width: $screen-xxl ) {
+        margin-left: 2%;
+        width: 400px;
+    }
+    @media only screen and (min-width: $screen-xxl ) {
+        width: 500px;
+        margin-left: 3%;
+    }
+    
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.error{
+    &__label{
+        color: $terracotta !important;
+    }
+
+    &__control{
+        border-color: $terracotta !important;
+    }
+
+    &__help{
+        color: $terracotta !important;
+    }
+}
+
+.label{
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    background-color: #fff;
+    top: -9px;
+    padding: 0 10px;
+    left: 20px;
+    line-height: 1;
+    z-index: 1;
+    color: $charcoal;
+
+    &__ocean{
+        color: $ocean;
+    }
+}
+
+.control{     
+    display: block;
+    flex: 1 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-weight: 400;
+    color: $charcoal;
+    border-color: $charcoal;
+    background-color: #fff;
+    background-clip: padding-box;
+    appearance: none;
+    border-radius: .25rem;
+    // font-size: 0.8em;
+    font-weight: bold;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &__ocean{
+        color: $ocean;
+        border-color: $ocean;
+    }
+}
+@media only screen and (max-width: $screen-lg ) {
+    .control{ 
+        border:none;
+        padding: 1.6rem;
+        border-bottom: 1px solid #b6bac2;
+        text-indent: 6rem;
+    }
+    .label{
+        top: 16px;
+        left: 16px;
+
+    }
+}

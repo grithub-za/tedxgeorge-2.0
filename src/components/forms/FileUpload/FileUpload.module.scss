@@ -1,0 +1,74 @@
+
+@import "styles/globals/placeholders";
+
+
+.dropzone{
+    width: 100%;
+    background-color: $mist;
+    border: 1px dotted #ccc;
+    padding: 5rem;
+    height: 150px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.dropzoneActive{
+    border: 1px solid $ice;
+    background-color: $ice25;
+    color: $ocean;
+}
+
+.dropzoneText{
+    @extend %h3;
+    font-size: 2.1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropzoneCntr{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .35;
+}
+
+.dropzoneHelp{
+    width: 100%;
+    text-align: center;
+}
+
+.table{
+    margin-top: 4rem;
+    @extend %tableBlock;
+
+    & tbody{
+        @extend %zebraTable;
+    }
+}
+
+.row{
+    @extend %tableRow;
+}
+
+.cell{
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @extend %tableCell;
+}
+
+.headerCell{
+    font-weight: 800;
+    @extend %tableHeadingCell;
+}
+
+.editCell{
+    overflow: visible !important;
+}

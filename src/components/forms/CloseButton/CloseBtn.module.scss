@@ -1,0 +1,12 @@
+.block{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    flex: 1 0 auto
+}
+
+.noFlex{
+    flex: 0;
+}
+

@@ -1,0 +1,25 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    @extend %tableBlock;
+    table-layout: fixed;
+    padding: 0;
+    border-spacing: 0;
+    font-size: 1.4rem
+}
+
+.cell{
+    @extend %tableCell;
+}
+
+.row{
+    @extend %tableRow;
+}
+
+.heading{
+    @extend %tableHeadingCell;
+    text-transform: capitalize;
+}
+
+

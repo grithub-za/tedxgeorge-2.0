@@ -1,0 +1,94 @@
+@import "@/styles/globals/placeholders";
+
+
+.zebraStripe{
+    background-color: #333;
+}
+
+.cell{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.full{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $screen-md){
+        display: none;
+    }
+}
+
+.modules{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $screen-md){
+        display: flex;
+    }
+}
+
+.price{
+    @include dynamic-font(33, 40);
+    margin-bottom: 1rem;
+}
+
+.header{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #555;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.subHeading{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.col{
+    padding: 2rem;
+    background-color: #2e2e2e;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    flex: 1 0 0%;
+    width: 100%;
+    border: 1rem solid #222;
+
+    @media screen and (max-width: $screen-md){
+        flex: 1 0 50%;
+        width: 50%;
+        margin: 0;
+    }
+
+    @media screen and (max-width: $screen-sm){
+        flex: 1 0 100%;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    line-height: 1;
+    border-bottom: 1px dotted #555;
+    padding: 1.5rem 0;
+}
+
+.fewLeft{
+    font-size: 1.2rem;
+    color: #aaa;
+    line-height: 1;
+    margin: 0 0 .5rem 0;
+    text-align: center;
+}

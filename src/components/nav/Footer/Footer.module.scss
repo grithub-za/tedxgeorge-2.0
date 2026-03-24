@@ -1,0 +1,65 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    display: flex;
+    background-color: #e24843;
+    padding: 4rem;
+    margin-top: 8rem;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    color: #111;
+
+    @media screen and (max-width: $screen-sm){
+        padding: 2rem 1rem 8rem 1rem;
+        height: auto;
+    }
+
+    & a{
+        color: #111;
+        border-color: #111;
+    }
+}
+
+.logo{
+    width: 250px;
+}
+
+.icon{
+    fill: #111;
+    width: 25px;
+    height: 25px;
+}
+
+.iconLink{
+    background-color: transparent;
+    border: none;
+}
+
+.linkCntr{
+    border: none;
+
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+
+.menu{
+    columns: 3;
+    column-gap: 4rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuLink{
+    color: #111;
+    display: block;
+    border: none;
+    padding: .5rem 0;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+}
+

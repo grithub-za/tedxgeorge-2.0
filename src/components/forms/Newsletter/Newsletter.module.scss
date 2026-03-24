@@ -1,0 +1,61 @@
+@import 'styles/globals/variables';
+
+.block{
+    display: flex;
+    flex-direction: row;
+}
+
+.blockColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.control{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $charcoal;
+    background-color: #fff;
+    background-clip: padding-box;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.inputCntr{
+    width: 100%;
+
+    & [class*=Input_control]{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.inputCntrFull{
+    width: 100%;
+    margin-bottom: 2rem;
+
+    label {
+        margin-top: -3px;
+    }
+}
+
+.buttonCntr{
+    width: 30%;
+
+    & [class*=Buttons_block]{
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.full{
+    width: 100% !important;
+}
+
+

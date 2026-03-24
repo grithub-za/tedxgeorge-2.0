@@ -1,0 +1,56 @@
+@import "@/styles/globals/placeholders";
+
+
+.block{
+    padding: 1rem;
+    background-color: #444;
+    border-radius: $border-radius;
+}
+
+
+.signatureCanvas{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+
+.summary{
+    padding: 2rem;
+    background-color: #333;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+    list-style: none;
+
+    &::marker{
+        display: none !important;
+    }
+}
+
+.controlGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1 0 0%;
+
+    & label{
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+        color: #ccc;
+        line-height: 1.4;
+    }
+}
+
+.acceptBtn{
+    padding: 1rem 2rem;
+    background-color: $green;
+    color: $white;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.acceptBtnIcon{
+    margin-right: 2rem;
+}
+

@@ -1,0 +1,45 @@
+@import 'styles/globals/variables';
+@import "styles/globals/placeholders";
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 31.3%;
+    margin: 1rem 2% 1rem 0;
+    text-align: left !important;
+    align-items: flex-start !important;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #999;
+    border-color: #999;
+
+    &:hover{
+        border-color: $link_color;
+    }
+
+    @media only screen and (max-width: $screen-sm ) {
+        width: 48%;
+    }
+}
+
+.active{
+    color: $green !important;
+    border-color: $green !important;
+    background-color: $pistachio50 !important;
+
+    &:hover{
+       filter: none;
+    }
+}
+
+.heading{
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.price{
+    font-size: 1.6rem !important;
+}
