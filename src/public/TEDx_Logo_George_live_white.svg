@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1822.9 237.7">
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Logo">
+      <text transform="translate(518.5 173.5)" fill="#fff" font-size="200.9"><tspan x="0" y="0" font-family="Inter-Light, Inter" font-weight="300" letter-spacing="0em">George</tspan><tspan x="681.3" y="0" font-family="Inter-Light, Inter" font-weight="300" letter-spacing="0em"> </tspan><tspan x="727.6" y="0" font-family="Inter-Bold, Inter" font-weight="700" letter-spacing="0em">Live </tspan></text>
+      <g>
+        <path d="M40.9,64.8H0V27.4h126.6v37.4h-40.8v108.6h-44.9v-108.6Z" fill="#eb0028"/>
+        <path d="M133.5,27.4h122.9v37.4h-78v18.2h78v34.8h-78v18.2h78v37.4h-122.9V27.4Z" fill="#eb0028"/>
+        <path d="M264,27.4h73.7c48.6,0,65.7,36,65.7,72.8s-23.7,73.2-74.5,73.2h-64.9V27.4ZM308.9,136h17.6c28,0,32.1-22.7,32.1-36.4s-2.9-34.7-35.3-34.7h-14.3v71.1Z" fill="#eb0028"/>
+        <path d="M467.9,117.5l-13.7-22.7-13.4,22.7h-32.9l31.2-46-30.1-44h32.9l12.2,21.7,12.5-21.7h32.9l-30.1,44,31.2,46h-32.9Z" fill="#eb0028"/>
+      </g>
+      <text transform="translate(-1330.4 -939.4)" font-family="MyriadPro-Regular, &apos;Myriad Pro&apos;" font-size="12"><tspan x="0" y="0">Lorem ipsum</tspan></text>
+    </g>
+  </g>
+</svg>
